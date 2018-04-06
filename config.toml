@@ -1,8 +1,0 @@
-baseURL = "http://example.org/"
-languageCode = "cs"
-title = "My New Hugo Site"
-theme = "my-theme"
-[taxonomies]
- tag = "tags"
- category = "categories"
- my = "my"
