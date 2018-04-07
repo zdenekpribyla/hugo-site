@@ -1,0 +1,102 @@
+class="navbar navbar-expand-lg navbar-light bg-light">
+                
+        <div><a class="navbar-brand" href="#">Logo</a></div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Dropdown
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                              </li>
+                        <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          Dropdown
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                          <a class="dropdown-item" href="#">Action</a>
+                                          <a class="dropdown-item" href="#">Another action</a>
+                                          <div class="dropdown-divider"></div>
+                                          <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                      </li>
+                  </ul>
+                </div> 
+                
+              </nav>
+
+
+              * {
+                margin: 0;
+                padding: 0;
+                outline: none;
+                box-sizing: border-box;
+            }
+            
+            body {
+                color: red;
+            }
+            .dropdown:hover .dropdown-menu {
+                display: block;
+             }
+            
+             .navbar .dropdown-menu {
+                margin-top: 0px;
+               }
+            
+               $(document).ready(function() {
+                $("#navToggle a").click(function(e){
+                    e.preventDefault();
+                    
+                    $("header > nav").slideToggle("medium");
+                    $("#logo").toggleClass("menuUp menuDown");
+                });
+                
+                $(window).resize(function() {
+                    if($( window ).width() >= "600") {
+                        $("header > nav").css("display", "block");
+                        
+                        if($("#logo").attr('class') == "menuDown") {
+                            $("#logo").toggleClass("menuUp menuDown");
+                        }
+                    }
+                    else {
+                        $("header > nav").css("display", "none");
+                    }
+                });
+                
+                $("header > nav > ul > li > a").click(function(e) {
+                    if($( window ).width() <= "600") {
+                        if($(this).siblings().size() > 0 ) {
+                            $(this).siblings().slideToggle("fast")
+                            $(this).children(".toggle").html($(this).children(".toggle").html() == 'close' ? 'expand' : 'close');
+                        }
+                    }
+                });
+            });            
