@@ -1,25 +1,42 @@
 <div class="header">
-                <h2 style="text-align:center">LOGO</h2>
-                
-</div>
-              
-<div class="navbar">
-        <ul class="navbar__ul">
-                <li class="navbar__li"><a href="#home">Home</a></li>
-                <li class="navbar__li navbar__li-dropdown:hover"><a href="#news">News <i class="fas fa-caret-down"></i></a>
-                        <div class="dropdown-content">
-                                        <a href="#">public</a>
-                                        <a href="#">economy</a>
-                                        <a href="#">science</a>
-                                      </div>
-                </li>
-                <li class="navbar__li"><a href="#contact">About <i class="fas fa-caret-down"></i></a>
-                        <div class="dropdown-content">
-                                        <a href="#">contact</a>
-                                        <a href="#">map</a>
-                                        <a href="#">history</a>
-                                      </div>
-                </li>
-</ul>
+    <h2 style="text-align:center">LOGO</h2>
+
 </div>
 
+<div class="navbar">
+    <ul class="navbar__ul" id="navbar__ul">
+            <li class="menu-icon__position">
+                    <a onclick="myFunction()" class="menu-icon__visibility menu-icon__style"><i class="fas fa-bars"></i> Menu
+        
+                    </a>
+                </li>
+        <li class="navbar__li">
+            <a href="#home">Home</a>
+        </li>
+        <li class="navbar__li">
+            <a href="http://webtrh.cz">News
+                <span class="navbar__li-font-awesome"><i class="fas fa-caret-down"></i></span>
+            </a>
+            <div class="dropdown-content">
+                <a href="https://pribyla.com">public</a>
+                <a href="#">economy</a>
+                <a href="#">science</a>
+            </div>
+        </li>
+        <li class="navbar__li">
+            <a href="#contact">About
+                <i class="fas fa-caret-down"></i>
+            </a>
+            <div class="dropdown-content">
+                <a href="https://pribyla.com">contact</a>
+                <a href="#">map</a>
+                <a href="#">history</a>
+            </div>
+        </li>
+        
+    </ul>
+</div>
+
+<!-- https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp -->
+
+<!-- prostudovat https://codepen.io/andornagy/pen/RNeydj -->
