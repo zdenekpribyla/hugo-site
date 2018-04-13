@@ -1,0 +1,19 @@
+- name: Auto Red
+  label: Bestseller
+  rating: <i class="fa fa-yellow fa-star" aria-hidden="true"></i><i class="fa fa-yellow fa-star" aria-hidden="true"></i><i class="fa fa-yellow fa-star" aria-hidden="true"></i><i class="fa fa-yellow fa-star-half-o" aria-hidden="true"></i><i class="fa fa-yellow fa-star-o" aria-hidden="true"></i>
+  id: 00001
+  price: 30 000
+  vyhody: There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words
+  nevyhody: There are many variations of passages of Lorem Ipsum available, b
+  komentar: There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by
+  imgUrl: /images/auto-small.jpg
+
+- name: Svetr Yellow
+  label: 
+  rating: <i class="fa fa-yellow fa-star" aria-hidden="true"></i><i class="fa fa-yellow fa-star" aria-hidden="true"></i><i class="fa fa-yellow fa-star" aria-hidden="true"></i><i class="fa fa-yellow fa-star-o" aria-hidden="true"></i><i class="fa fa-yellow fa-star-o" aria-hidden="true"></i>
+  id: 00002
+  price: 580
+  vyhody: There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words
+  nevyhody: There are many variations of passages of Lorem Ipsum available, b
+  komentar: There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by
+  imgUrl: /images/svetr-small.jpg
