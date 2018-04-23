@@ -1,0 +1,45 @@
+<div class="content">
+        <h1 style="border-bottom: 1px black solid; padding-bottom: 10px; margin-bottom: 20px;">{{ .Title }}</h1>
+    <div class="row" style="overflow: auto">
+        <div class="col-xs-12 col-md-6 container__intro-text">{{ .Params.containerIntroText }}</div>
+        <div class="col-xs-12 col-md-6 container__intro-image">
+            <img src="{{ .Params.containerIntroImageUrl }}" class="img-fluid">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12 col-md-12 homepage" style="margin-top: 40px;">
+            <h2 id="top-tabulka">
+                <span>
+                    TOP {{ partial "year" . }}
+                </span>
+            </h2>
+        </div>
+        <div class="col-xs-12 col-md-12">{{ partial "multi-responsive-table" . }}</div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12 col-md-2">
+            <div>
+                <b>Autor recenze:</b>
+                <br> {{ .Params.myAuthor }}
+            </div>
+            <div style="border-top: solid 1px #CCC; margin-top: 5px; padding-top: 8px; margin-bottom: 15px;">
+                <b>Poslední úpravy:</b>
+                <br> {{ .Params.myDate }}
+            </div>
+            <div class="banner-top-product">
+                <a href="/top-vibratory-recenze">
+                    <img src="/top-vibratory-zebricek.jpg" alt="nejlepší vibrátory českých eshopů recenze a srovnání" style="max-width: 150px">
+                </a>
+
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-7">
+            {{ .Content }}
+        </div>
+        <div class="col-xs-12 col-md-3">
+            {{ partial "sidebar" . }}
+        </div>
+    </div>
+</div>

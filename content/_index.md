@@ -3,6 +3,7 @@ title: "hello world"
 description: "this is my homepage description"
 date: 2018-04-04T10:37:23+02:00
 draft: false
+product: ["car", "chair"]
 ---
 
 this is homepage content in .md

@@ -1,29 +1,32 @@
-- name: "Auto Red"
-  label: "Best Product"
-  rating: <i class="fa fa-yellow fa-star" aria-hidden="true"></i><i class="fa fa-yellow fa-star" aria-hidden="true"></i>
-  id: 00001
-  price: 30 000
-  vyhody: There are many variations of passages of Lorem Ipsum available, but the majority have suffered 
-  nevyhody: There are many variations of passages of Lorem Ipsum available, b
-  komentar: There are many variations of passages of Lorem Ipsum available, but the majorit
-  imgurl: /images/auto-small.jpg
+-  name: "car"
+   label: "Best Product"
+   rating: <i class="fa fa-yellow fa-star" aria-hidden="true"></i><i class="fa fa-yellow fa-star" aria-hidden="true"></i>
+   id: 00001
+   price: 30 000
+   vyhody: There are many variations of passages of Lorem Ipsum available, but the majority have suffered 
+   nevyhody: There are many variations of passages of Lorem Ipsum available, b
+   komentar: There are many variations of passages of Lorem Ipsum available, but the majorit
+   imgurl: /images/auto-small.jpg
+   rate: 10
 
-- name: "Auto Red"
-  label: "BestSeller"
-  rating: <i class="fa fa-yellow fa-star" aria-hidden="true"></i><i class="fa fa-yellow fa-star" aria-hidden="true"></i>
-  id: 00001
-  price: 5 000
-  vyhody: There are many variations of passages of Lorem Ipsum available, but the majority have suffered 
-  nevyhody: There are many variations of passages of Lorem Ipsum available, b
-  komentar: There are many variations of passages of Lorem Ipsum available, but the majorit
-  imgurl: /images/auto-small.jpg
+-  name: "chair"
+   label: "BestSeller"
+   rating: <i class="fa fa-yellow fa-star" aria-hidden="true"></i><i class="fa fa-yellow fa-star" aria-hidden="true"></i>
+   id: 00001
+   price: 5 000
+   vyhody: There are many variations of passages of Lorem Ipsum available, but the majority have suffered 
+   nevyhody: There are many variations of passages of Lorem Ipsum available, b
+   komentar: There are many variations of passages of Lorem Ipsum available, but the majorit
+   imgurl: /images/zidle-small.jpg
+   rate: 30
 
-- name: "Auto Red"
-  label: ""
-  rating: <i class="fa fa-yellow fa-star" aria-hidden="true"></i><i class="fa fa-yellow fa-star" aria-hidden="true"></i>
-  id: 00001
-  price: 1 000
-  vyhody: There are many variations of passages of Lorem Ipsum available, but the majority have suffered 
-  nevyhody: There are many variations of passages of Lorem Ipsum available, b
-  komentar: There are many variations of passages of Lorem Ipsum available, but the majorit
-  imgurl: /images/auto-small.jpg
+-  name: "shirt"
+   label: ""
+   rating: <i class="fa fa-yellow fa-star" aria-hidden="true"></i><i class="fa fa-yellow fa-star" aria-hidden="true"></i>
+   id: 00002
+   price: 1 000
+   vyhody: There are many variations of passages of Lorem Ipsum available, but the majority have suffered 
+   nevyhody: There are many variations of passages of Lorem Ipsum available, b
+   komentar: There are many variations of passages of Lorem Ipsum available, but the majorit
+   imgurl: /images/svetr-small.jpg
+   rate: 20
