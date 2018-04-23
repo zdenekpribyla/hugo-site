@@ -1,0 +1,81 @@
+<table>
+        <caption>Add as shortcode in .md file</caption>
+        <thead>
+            <tr>
+                <th scope="col">
+                    <i class="fa fa-2x fa-camera" aria-hidden="true"></i>
+    
+                </th>
+                <th scope="col">
+                    <i class="fa fa-yellow fa-2x fa-trophy" aria-hidden="true"></i>
+                    </i>
+    
+                </th>
+    
+                </th>
+                <th scope="col">
+                    <i class="fa fa-green fa-2x fa-thumbs-up" aria-hidden="true"></i>
+    
+                </th>
+                <th scope="col">
+                    <i class="fa fa-red fa-2x fa-thumbs-down" aria-hidden="true"></i>
+                </th>
+    
+                <th scope="col">
+                    <i class="fa fa-2x fa-video-camera" aria-hidden="true"></i>
+    
+                </th>
+    
+                <th scope="col">
+                    <i class="fa fa-blue fa-2x fa-commenting" aria-hidden="true"></i>
+    
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+                {{ range sort (where .Site.Data.products ".name" "in" .Page.Params.product) "rating" "desc" }}
+    
+    
+            <tr>
+                <td data-label="" class="before-camera">
+                    <div style="text-align: center">
+                        <img src="{{ .imgurl }}" class="img-fluid img-thumbnail">
+                    </div>
+                </td>
+    
+                <td data-label="" class="before-trophy">
+                    <div style="text-align: center">
+    
+                        <div style="margin-top: .5em; font-size: 1em">
+                            <b>
+    
+                                <span class="number-order-in-table"></span># {{ .label }}</b>
+                        </div>
+                        <div style="margin-top: .5em">
+                            <b>{{ .name }}</b>
+                        </div>
+                        <div style="margin-top: .5em">
+                            {{ .rating | safeHTML }}
+                        </div>
+                        <a href="#">
+                            <div class="table-price-button">
+                                <div style="color: red; padding: 5px 0">cena od {{ .price }} Kč</div>
+                                <div style="text-decoration: underline; padding: 0 10px 6px 10px">
+                                    <i class="fa fa-green fa-check-circle" aria-hidden="true"></i> zobrazit nejlepší nabídku
+                                </div>
+                            </div>
+                        </a>
+    
+                    </div>
+    
+                </td>
+                <td data-label="Výhody" class="before-thumbs-up">{{ .vyhody }}</td>
+                <td data-label="Nevýhody" class="before-thumbs-down">{{ .nevyhody }}</td>
+                <td data-label="Video" class="before-video-camera"></td>
+                <td class="before-commenting">{{ .komentar }}</td>
+            </tr>
+            {{ end }}
+    
+    
+        </tbody>
+    </table>
