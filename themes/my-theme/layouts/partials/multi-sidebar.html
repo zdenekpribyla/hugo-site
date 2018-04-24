@@ -1,0 +1,10 @@
+<div style="border: 2px solid salmon">
+    <div style="text-align: center; font-size: 1em; padding: 0 0 5px 0">
+       <b>{{ .Title}}</b>
+    </div>
+    <div style="text-align: center">Obsah článku</div>
+    <li class="toc__li">
+        <a href="#top-tabulka">TOP {{ partial "year" . }}</a>
+    </li>
+    {{ .Page.TableOfContents }}
+</div>
