@@ -2,7 +2,7 @@
 title: "Testovaci clanek pro multi"
 myDate: 23.4.2018
 draft: false
-myAuthor: "MuDr Lenka Králová"
+myAuthor: "MuDr. Lenka Králová"
 metaTitle: "meta description clanku"
 metaDescription: "titule testovaciho clanku"
 layout: "multi"

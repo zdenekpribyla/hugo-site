@@ -1,5 +1,5 @@
 ---
-title: "hello world"
+title: "Hello world"
 description: "this is my homepage description"
 date: 2018-04-04T10:37:23+02:00
 draft: false
