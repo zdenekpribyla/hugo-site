@@ -180,15 +180,11 @@ body {
     text-transform: uppercase;
   }
   
-  @media screen and (max-width: 680px) {
+  @media screen and (max-width: 768px) {
     table {
       border: 0;
     }
   
-    table caption {
-      font-size: 1.3em;
-    }
-    
     table thead {
       border: none;
       clip: rect(0 0 0 0);
@@ -225,24 +221,24 @@ body {
       padding: 0 1em .2em 0;
     }
 
-    .before-thumbs-up:before {
+    table .before-thumbs-up:before {
         font-family: FontAwesome;
         content: "\f164";
         font-size: 20px;
         color: green;
     }
-    .before-thumbs-down:before {
+    table .before-thumbs-down:before {
         font-family: FontAwesome;
         content: "\f165";
         font-size: 20px;
         color: rgb(255,0,0);
     }
-    .before-video-camera:before {
+    table .before-video-camera:before {
         font-family: FontAwesome;
         content: "\f03d";
         font-size: 20px;
     }
-    .before-commenting:before {
+    table .before-commenting:before {
         font-family: FontAwesome;
         content: "\f27a";
         font-size: 20px;
@@ -268,6 +264,78 @@ body {
     box-shadow:0px 0px 20px rgba(0,0,0,0.15);
 }
 
+/* single table intro */
+
+table.single__table-intro {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+    font-size: .85em;
+  }
+  
+  table.single__table-intro caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+  }
+  
+  table.single__table-intro tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .35em;
+  }
+  
+  table.single__table-intro th,
+  table.single__table-intro td {
+    padding: .925em .625em;
+    text-align: center;
+    vertical-align: top;
+  }
+  
+  table.single__table-intro th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    width: 35%;
+  }
+
+  @media screen and (max-width: 768px) {
+    table.single__table-intro {
+        border: 1px solid #ccc;
+        border-collapse: collapse;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        table-layout: fixed;
+        font-size: .85em;
+      }
+            
+      table.single__table-intro tr {
+        background-color: #f8f8f8;
+        border: 1px solid #ddd;
+        padding: .35em;
+        display: inherit;
+      }
+      
+      table.single__table-intro th,
+      table.single__table-intro td {
+        padding: .925em .625em;
+        text-align: center;
+        vertical-align: top;
+      }
+      
+      table.single__table-intro th {
+        font-size: .85em;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+        width: 35%;
+        vertical-align: middle;
+      }
+  }
+
+
 /* table of content */
 .toc__li, #TableOfContents > ul, #TableOfContents > ul > li, #TableOfContents > ul > li > ul, #TableOfContents > ul > li > ul > li {
     display: block;
@@ -285,6 +353,21 @@ body {
 /* breadcrumb */
 .breadcrumb a{
     margin-right: 10px
+}
+
+/* single sidebar */
+.gray-box {
+    padding: 3px 5px 0 5px;
+    border-top: #DDDDDD 1px solid;
+    background: url(https://vibratory.org/wp-content/uploads/2016/12/bg_lightgray_darktop_lightbottom.gif) repeat-x;
+    margin-top: 15px;
+}
+.small {
+    font-size: 0.75em;
+    color: #8a8a8a;
+    line-height: 1.2em;
+    margin-bottom: 1em;
+    margin-top: 1em;
 }
 
 
