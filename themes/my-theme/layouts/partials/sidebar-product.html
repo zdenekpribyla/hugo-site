@@ -1,0 +1,39 @@
+<div class="grey-box">
+    
+    <div>
+        <p class="sidebar__subtitles">Další TOP pomůcky</p>
+    </div>
+    
+    {{ $include := (slice "car" "chair") }}    
+        {{ range sort (where .Site.Data.products ".name" "in" $include) "rate" "desc" }}
+    <div class="row" style="padding-left: 20px; margin-bottom: 10px">
+        
+        <div class="col-xs-6">
+                <img src="{{ .imgurl }}" alt="klasický vibrátor Borůvka 2" style="width: 120px" class="img-fluid img-thumbnail" >
+        </div>
+        <div class="col-xs-6">
+            <div style="padding: 5px 0 20px 20px">
+            <p style="margin-bottom: 5px"><b>{{ .name }}</b></p>
+            <p style="margin-bottom: 5px">{{ .price }} Kč</p>
+            <p>{{ if eq .rating 3}}
+                    <i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star-o"></i><i class="fa fa-yellow fa-star-o"></i>
+                    
+                    {{ else if eq .rating 35}}
+                    <i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star-half-o"></i><i class="fa fa-yellow fa-star-o"></i>
+                    
+                    {{ else if eq .rating 4}}
+                    <i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star-o"></i>
+                    
+                    {{ else if eq .rating 45}}
+                    <i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star-half-o"></i><i class="fa fa-yellow fa-star-o"></i>
+                    
+                    {{ else}}
+                    <i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i>
+                    {{ end }}</p>
+            </div>
+        </div>
+        
+    </div>
+    {{ end }}
+    
+</div>

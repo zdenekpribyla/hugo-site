@@ -1,4 +1,4 @@
-<table style="margin: 0 0 30px 0">
+<table class="multi__table" style="margin: 0 0 30px 0">
         
         <thead>
             <tr>
@@ -33,7 +33,7 @@
             </tr>
         </thead>
         <tbody>
-                {{ range sort (where .Site.Data.products ".name" "in" .Page.Params.product) "rating" "desc" }}
+                {{ range sort (where .Site.Data.products ".name" "in" .Page.Params.product) "rate" "desc" }}
     
     
             <tr>
@@ -55,7 +55,21 @@
                             <b>{{ .name }}</b>
                         </div>
                         <div style="margin-top: .5em">
-                            {{ .rating | safeHTML }}
+                                {{ if eq .rating 3}}
+                                <i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star-o"></i><i class="fa fa-yellow fa-star-o"></i>
+                                
+                                {{ else if eq .rating 35}}
+                                <i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star-half-o"></i><i class="fa fa-yellow fa-star-o"></i>
+                                
+                                {{ else if eq .rating 4}}
+                                <i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star-o"></i>
+                                
+                                {{ else if eq .rating 45}}
+                                <i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star-half-o"></i><i class="fa fa-yellow fa-star-o"></i>
+                                
+                                {{ else}}
+                                <i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i>
+                                {{ end }}
                         </div>
                         <a href="#">
                             <div class="table-price-button">
@@ -72,7 +86,7 @@
                 <td data-label="Výhody" class="before-thumbs-up">{{ .vyhody }}</td>
                 <td data-label="Nevýhody" class="before-thumbs-down">{{ .nevyhody }}</td>
                 <td data-label="Video" class="before-video-camera"></td>
-                <td class="before-commenting">{{ .komentar }}</td>
+                <td class="before-commenting"><i>{{ .komentar }}</i></td>
             </tr>
             {{ end }}
     

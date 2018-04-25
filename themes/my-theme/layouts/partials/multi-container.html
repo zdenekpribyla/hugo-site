@@ -26,7 +26,7 @@
     <div class="row" style="overflow: auto">
         <div class="col-xs-12 col-md-6 container__intro-text">{{ .Params.containerIntroText }}</div>
         <div class="col-xs-12 col-md-6 container__intro-image">
-            <img src="{{ .Params.containerIntroImageUrl }}" class="img-fluid">
+            <img src="{{ .Params.containerIntroImage }}" class="img-fluid">
         </div>
     </div>
 
@@ -38,7 +38,7 @@
                 </span>
             </h2>
         </div>
-        <div class="col-xs-12 col-md-12">{{ partial "multi-responsive-table" . }}</div>
+        <div class="col-xs-12 col-md-12">{{ partial "multi-table-products" . }}</div>
     </div>
 
     <div class="row">

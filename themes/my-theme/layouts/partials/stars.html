@@ -1,0 +1,18 @@
+
+
+{{ if eq .rating 3}}
+<i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star-o"></i><i class="fa fa-yellow fa-star-o"></i>
+
+{{ else if eq .rating 35}}
+<i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star-half-o"></i><i class="fa fa-yellow fa-star-o"></i>
+
+{{ else if eq .rating 4}}
+<i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star-o"></i>
+
+{{ else if eq .rating 45}}
+<i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star-half-o"></i><i class="fa fa-yellow fa-star-o"></i>
+
+{{ else}}
+<i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i>
+{{ end }}
+
