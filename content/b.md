@@ -6,8 +6,8 @@ myAuthor: "MuDr. Lenka Králová"
 metaTitle: "meta description clanku"
 metaDescription: "titule testovaciho clanku"
 layout: "multi"
-product: ["car", "chair"]
-containerIntroImageUrl: /images/auto-layout.jpg
+product: ["car", "chair", "shirt"]
+containerIntroImage: /images/auto-layout.jpg
 containerIntroText: "toto je uvodni text pro testovaci clanek, aby Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci. Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante. Aenean placerat. Integer malesuada. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Donec quis nibh at felis congue commodo. Aliquam ornare wisi eu metus. Donec quis nibh at felis congue commodo."
 parentCategory:
 parentCategory-url:

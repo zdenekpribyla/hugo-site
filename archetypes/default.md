@@ -2,12 +2,12 @@
 title:
 myDate: 
 draft: true
-author: "MuDr. Lenka Králová"
+myAuthor: "MuDr. Lenka Králová"
 metaTitle:
 metaDescription:
 layout: "multi"
-products:
-containerIntroImageUrl:
+product:
+containerIntroImage:
 containerIntroText: 
 parentCategory:
 parentCategoryUrl:

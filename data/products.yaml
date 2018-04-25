@@ -1,17 +1,24 @@
 -  name: "car"
    label: "Best Product"
-   rating: <i class="fa fa-yellow fa-star" aria-hidden="true"></i><i class="fa fa-yellow fa-star" aria-hidden="true"></i>
+   rating: 35
    id: 00001
    price: 30 000
    vyhody: There are many variations of passages of Lorem Ipsum available, but the majority have suffered 
    nevyhody: There are many variations of passages of Lorem Ipsum available, b
    komentar: There are many variations of passages of Lorem Ipsum available, but the majorit
+   material: silikon
+   delkasirka: 53 / 12
    imgurl: /images/auto-small.jpg
-   rate: 10
+   rate: 100
+   affilLink: "https://ruzovyslon.cz"
+   eshop: ruzovyslon.cz
+   numEshop: 2 eshopy
+   doprava: doprava zdarma
+   
 
 -  name: "chair"
    label: "BestSeller"
-   rating: <i class="fa fa-yellow fa-star" aria-hidden="true"></i><i class="fa fa-yellow fa-star" aria-hidden="true"></i>
+   rating: 3
    id: 00001
    price: 5 000
    vyhody: There are many variations of passages of Lorem Ipsum available, but the majority have suffered 
@@ -19,10 +26,14 @@
    komentar: There are many variations of passages of Lorem Ipsum available, but the majorit
    imgurl: /images/zidle-small.jpg
    rate: 30
+   affilLink: "https://ruzovyslon.cz"
+   eshop: ruzovyslon.cz
+   numEshop: 2 eshopy
+   doprava: doprava zdarma
 
 -  name: "shirt"
    label: ""
-   rating: <i class="fa fa-yellow fa-star" aria-hidden="true"></i><i class="fa fa-yellow fa-star" aria-hidden="true"></i>
+   rating: 45
    id: 00002
    price: 1 000
    vyhody: There are many variations of passages of Lorem Ipsum available, but the majority have suffered 
@@ -30,3 +41,7 @@
    komentar: There are many variations of passages of Lorem Ipsum available, but the majorit
    imgurl: /images/svetr-small.jpg
    rate: 20
+   affilLink: "https://ruzovyslon.cz"
+   eshop: ruzovyslon.cz
+   numEshop: 2 eshopy
+   doprava: doprava zdarma
