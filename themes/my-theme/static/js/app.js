@@ -1,4 +1,4 @@
-var myFunction = function () {
+var toogleResponsiveMenu = function () {
     var x = document.getElementsByClassName("navbar__li")
     for (var i = 0; i < x.length; i++) {
         var oneClass = x[i]
