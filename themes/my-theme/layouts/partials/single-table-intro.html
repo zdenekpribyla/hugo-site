@@ -1,50 +1,70 @@
+{{ range where .Site.Data.products ".name" "in" .Params.product }}
 <table class="single__table-intro">
     <tbody>
         <tr>
             <th>
                 <i class="fa fa-yellow fa-2x fa-trophy" aria-hidden="true"></i>
-                </i>
             </th>
-            <td>top</td>
+            <td>
+                    {{ if eq .rating 3}}
+<i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star-o"></i><i class="fa fa-yellow fa-star-o"></i>
+
+{{ else if eq .rating 35}}
+<i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star-half-o"></i><i class="fa fa-yellow fa-star-o"></i>
+
+{{ else if eq .rating 4}}
+<i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star-o"></i>
+
+{{ else if eq .rating 45}}
+<i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star-half-o"></i><i class="fa fa-yellow fa-star-o"></i>
+
+{{ else}}
+<i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i><i class="fa fa-yellow fa-star"></i>
+{{ end }}
+            </td>
         </tr>
         <tr>
             <th>
                 Cena
             </th>
-            <td>top</td>
+            <td><p style="color: red; margin-bottom: 0.5rem">od {{ .price }} - {{ .numEshop }}</p>
+                <div style="font-size: 1.0em;"><i class="fa fa-check-circle fa-green "></i>
+                    <a href="{{ .affilLink }}" target="_blank" rel="nofollow">zobrazit nejlepší nabídku</a></div>            
+            </td>
         </tr>
         <tr>
             <th>
                 <i class="fa fa-green fa-2x fa-plus-circle" aria-hidden="true"></i>
                 </i>
             </th>
-            <td>amet, feugiat eu, orci. Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante. Aenean placerat. Integer malesuada. Sed ut perspiciatis unde omnis iste natus error sit</td>
+            <td>{{ .vyhody }}</td>
         </tr>
         <tr>
             <th>
                 <i class="fa fa-red fa-2x fa-minus-circle" aria-hidden="true"></i>
                 </i>
             </th>
-            <td>top</td>
+            <td>{{ .nevyhody }}</td>
         </tr>
         <tr>
             <th>
                 Materiál
             </th>
-            <td>top</td>
+            <td>{{ .material }}</td>
         </tr>
         <tr>
             <th>
                 Délka / šířka
             </th>
-            <td>top</td>
+            <td>{{ .delkasirka }} cm</td>
         </tr>
         <tr>
                 <th>
-                    <i class="fa fa-2x fa-commenting" aria-hidden="true"></i>
+                    <i class="fa fa-2x fa-blue fa-commenting" aria-hidden="true"></i>
                     </i>
                 </th>
-                <td>top</td>
+                <td>{{ .komentar }}</td>
             </tr>
     </tbody>
 </table>
+{{ end }}

@@ -1,0 +1,57 @@
+<div class="content">
+
+
+    <span class="breadcrumb">
+        <a href="/">Domů</a>
+        {{ template "breadcrumb" dict "currentPage" .Page "id" .UniqueID }}
+        {{ define "breadcrumb" }} {{ if .currentPage.Parent }}
+        {{ if ne .currentPage.Parent .IsHome }} {{ template "breadcrumb" dict "currentPage" .currentPage.Parent }} 
+        {{ end }}
+        {{ if eq .id .currentPage.UniqueID }} {{ .currentPage.Title }} {{ else }}
+        <a href="{{ .currentPage.URL }}">{{ .currentPage.Title }}</a>
+        {{ end }} {{ end }} {{ end }}
+    </span>
+
+    <!-- https://discourse.gohugo.io/t/implementing-breadcrumb-navigation-in-hugo/1048/41 -->
+
+    <h1 style="border-bottom: 1px black solid; padding-bottom: 10px; margin-bottom: 20px;">{{ .Title }}</h1>
+    <div class="row" style="overflow: auto">
+        <div class="col-xs-12 col-md-5">{{ partial "single-table-intro" . }}</div>
+        <div class="col-xs-12 col-md-7">
+            <div class="container__intro-text">{{ .Params.containerIntroText }}</div>
+            <div class="container__intro-image">
+                    <img src="{{ .Params.containerIntroImage }}" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="row" style="margin-top: 30px">
+        <div class="col-xs-12 col-md-2">
+            <div>
+                <b>Autor recenze:</b>
+                <br> {{ .Params.myAuthor }}
+            </div>
+            <div style="border-top: solid 1px #CCC; margin-top: 5px; padding-top: 8px; margin-bottom: 15px;">
+                <b>Poslední úpravy:</b>
+                <br> {{ .Params.myDate }}
+            </div>
+            <div class="banner-top-product">
+                <a href="/top-vibratory-recenze">
+                    <img src="/top-vibratory-zebricek.jpg" alt="nejlepší vibrátory českých eshopů recenze a srovnání" style="max-width: 150px">
+                </a>
+
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-7">
+            {{ .Content }}
+        </div>
+        <div class="col-xs-12 col-md-3">
+            {{ partial "single-sidebar" . }}
+        </div>
+    </div>
+
+
+</div>
+
+

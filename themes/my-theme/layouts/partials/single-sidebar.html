@@ -1,0 +1,48 @@
+<div class="sidebar__toc">
+    <div style="text-align: center; font-size: 1.1em; padding: 0 0 5px 0">
+        <b>{{ .Title}}</b>
+    </div>
+    <div style="text-align: center;font-size: 14px">Obsah článku</div>
+    {{ .Page.TableOfContents }}
+</div>
+
+<div class="grey-box">
+    <div>
+        <p style="padding-top: 5px; font-size: 20px">KDE KOUPIT?</p>
+    </div>
+    <div class="box">
+        <div class="clear"></div>
+        <div style="border-top: 1px #cccccc; border-bottom: 1px #cccccc;">
+            <table width="100%" cellspacing="0" cellpadding="3">
+                <tbody>
+                        {{ range where .Site.Data.products ".name" "in" .Params.product }}
+                             
+                    <tr>
+                           
+                            
+                        <td style="border-bottom: 2px solid #cccccc; background-color: #eeeeee;" width="50%">
+                            <strong>Prodejce</strong>
+                        </td>
+                        <td style="border-bottom: 2px solid #cccccc; background-color: #eeeeee;" width="50%">
+                            <strong>Cena</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="price-link" style="border-bottom: 1px dotted #cccccc; background-color: #ffffff;" valign="top" width="40%">
+                            <i class="fa fa-check-circle fa-green "></i>
+                            <a href="{{ .affilLink}}" class="seoquake-nofollow" target="_blank" rel="nofollow">{{ .eshop}}</a>
+                        </td>
+                        <td style="border-bottom: 1px dotted #cccccc; background-color: #ffffff;" valign="top" width="60%">{{ .price }} Kč
+                            <br>
+                            <b style="color: green">{{ .doprava }}</b>
+                        </td>
+                    </tr>
+                    {{ end }}
+                </tbody>
+            </table>
+        </div>
+        <div class="clear sidebar__small">
+            *Pouze nákupem u ověřeného autorizovaného prodejce získáte tuto kvalitní erotickou pomůcku za uvedenou cenu.</div>
+    </div>
+</div>
+{{ partial "sidebar-product" . }}
